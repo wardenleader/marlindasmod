@@ -16,7 +16,15 @@ export const SOCIAL = {
     facebook: "https://www.facebook.com/marlindasburlingame",
     twitter: "https://x.com/marlindasdayspa",
     youtube: "https://www.youtube.com/channel/UCXzuv0wbOc2zzogCjsaPWZA/videos",
+    linkedin: "https://www.linkedin.com/in/marlinda-wilson-37191216/",
 };
+
+export const POLICIES = [
+    "Please note that we strictly enforce our 24 hour cancellation policy.",
+    "We accept all payment methods with discounts applied to Zelle, Venmo, Cash, and Check.",
+    "Gratuities are accepted in cash, check, or Venmo. New clients, we recommend that you arrive 10 minutes prior to your first appointment.",
+    "All prices are subject to change without notice.",
+];
 export const HOURS = [
     { day: "Monday", hours: "Closed" },
     { day: "Tuesday", hours: "10:30 AM – 6:30 PM" },

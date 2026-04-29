@@ -48,7 +48,6 @@ export default function FloatingCTA() {
                         transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
                         className="hidden sm:flex fixed bottom-6 right-6 z-[70] animate-soft-pulse items-center gap-2 bg-rose hover:bg-rose-dark text-ink rounded-full pl-5 pr-6 py-3.5 text-xs font-medium tracking-[0.2em] uppercase shadow-2xl transition-colors hover:scale-105"
                         data-testid="floating-cta-desktop"
-                        style={{ marginBottom: 56 }}
                     >
                         <CalendarHeart size={18} strokeWidth={1.5} />
                         Book Now

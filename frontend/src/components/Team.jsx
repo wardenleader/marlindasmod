@@ -13,6 +13,27 @@ function InitialAvatar({ initial }) {
     );
 }
 
+function PhotoAvatar({ src, alt }) {
+    return (
+        <div className="relative w-36 h-36 sm:w-40 sm:h-40 rounded-full mx-auto overflow-hidden border-2 border-cream-50 shadow-[0_8px_24px_rgba(122,139,111,0.15)]">
+            <img
+                src={src}
+                alt={alt}
+                loading="lazy"
+                className="absolute inset-0 w-full h-full object-cover"
+            />
+        </div>
+    );
+}
+
+function Avatar({ member }) {
+    return member.image ? (
+        <PhotoAvatar src={member.image} alt={member.name} />
+    ) : (
+        <InitialAvatar initial={member.firstName.charAt(0)} />
+    );
+}
+
 export default function Team() {
     const [active, setActive] = useState(null);
 
@@ -48,7 +69,7 @@ export default function Team() {
                                 data-testid={`team-card-${m.id}`}
                             >
                                 <div className="pt-12 pb-8 px-6 bg-cream">
-                                    <InitialAvatar initial={m.firstName.charAt(0)} />
+                                    <Avatar member={m} />
                                 </div>
                                 <div className="bg-sage text-cream px-6 py-7">
                                     <h3 className="font-serif text-cream text-3xl sm:text-4xl font-light leading-none">
@@ -98,7 +119,7 @@ export default function Team() {
                                 ✕
                             </button>
                             <div className="px-8 sm:px-12 pt-12 pb-10">
-                                <InitialAvatar initial={active.firstName.charAt(0)} />
+                                <Avatar member={active} />
                                 <h3 className="mt-6 text-center font-serif text-sage text-4xl sm:text-5xl font-light">
                                     {active.name}
                                 </h3>

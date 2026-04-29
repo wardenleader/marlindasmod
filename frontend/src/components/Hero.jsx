@@ -16,13 +16,13 @@ export default function Hero() {
             <div className="absolute inset-0 z-0 overflow-hidden">
                 <div className="absolute inset-0 animate-ken-burns will-change-transform">
                     <img
-                        src="https://images.pexels.com/photos/3997379/pexels-photo-3997379.jpeg?auto=compress&cs=tinysrgb&w=2000"
-                        alt="Serene spa treatment ambiance"
-                        className="absolute inset-0 w-full h-full object-cover"
+                        src="https://customer-assets.emergentagent.com/job_luxury-skincare-spa-1/artifacts/rjlocen2_image.png"
+                        alt="Glowing radiant skin with soft pink anthurium and botanical accents"
+                        className="absolute inset-0 w-full h-full object-cover object-center"
                         loading="eager"
                     />
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-br from-sage/55 via-sage-700/40 to-ink/65" />
+                <div className="absolute inset-0 bg-gradient-to-br from-sage/40 via-rose/20 to-ink/55" />
             </div>
 
             {/* Floating shimmer particles */}
