@@ -1,0 +1,143 @@
+{
+  "theme": "light",
+  "archetype": "1 (Organic & Earthy)",
+  "vibe": "Boutique day spa meets modern wellness brand, highly animated, premium feel",
+  "colors": {
+    "primary": "#7A8B6F",
+    "secondary": "#F5F1EA",
+    "accent": "#D4A5A5",
+    "text": {
+      "body": "#2C2C2C",
+      "headings": "#7A8B6F",
+      "inverse": "#F5F1EA",
+      "muted": "#5C6B50"
+    },
+    "background": {
+      "main": "#F5F1EA",
+      "card": "#FFFFFF",
+      "drawer": "#7A8B6F",
+      "overlay": "rgba(44, 44, 44, 0.4)"
+    },
+    "borders": {
+      "subtle": "rgba(122, 139, 111, 0.2)",
+      "accent": "#D4A5A5"
+    },
+    "luxury_accent": "#C5A059"
+  },
+  "typography": {
+    "fonts": {
+      "headings": "'Cormorant Garamond', serif",
+      "body": "'Manrope', sans-serif",
+      "logo": "'Great Vibes', cursive",
+      "mono": "monospace"
+    },
+    "scale": {
+      "h1": "text-5xl sm:text-6xl md:text-7xl tracking-tighter",
+      "h2": "text-4xl sm:text-5xl tracking-tight",
+      "h3": "text-2xl sm:text-3xl",
+      "h4": "text-xl sm:text-2xl",
+      "body": "text-base leading-relaxed sm:text-lg",
+      "small": "text-sm uppercase tracking-[0.2em]"
+    },
+    "instructions": "Use light font weights for elegance (font-light to font-normal). Headings should be sage green unless inverted on dark backgrounds. Logo cursive font is for 'Marlinda\\'s' only."
+  },
+  "spacing_and_layout": {
+    "container": "max-w-7xl mx-auto px-6 md:px-12",
+    "section_padding": "py-24 md:py-32",
+    "grid": {
+      "services": "grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8",
+      "team": "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12"
+    },
+    "border_radius": "rounded-2xl sm:rounded-3xl",
+    "card_padding": "p-8 md:p-10"
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#7A8B6F] text-[#F5F1EA] hover:bg-[#5C6B50] rounded-full px-8 py-4 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg focus:ring-2 focus:ring-[#D4A5A5] focus:outline-none",
+      "accent": "bg-[#D4A5A5] text-[#2C2C2C] hover:bg-[#C28C8C] rounded-full px-8 py-4 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg focus:ring-2 focus:ring-[#7A8B6F] focus:outline-none",
+      "ghost": "bg-transparent text-[#7A8B6F] hover:bg-[#7A8B6F]/10 rounded-full px-6 py-3 transition-colors focus:ring-2 focus:ring-[#7A8B6F]"
+    },
+    "navigation": {
+      "desktop": "sticky top-0 z-50 bg-[#F5F1EA]/80 backdrop-blur-xl border-b border-[#7A8B6F]/20 transition-all duration-300",
+      "mobile_drawer": "fixed inset-y-0 right-0 w-full md:w-sm bg-[#7A8B6F] z-[100] p-8 text-[#F5F1EA]",
+      "nav_links": "relative text-[#2C2C2C] hover:text-[#7A8B6F] transition-colors after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-[#7A8B6F] after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left"
+    },
+    "cards": {
+      "service": "group relative overflow-hidden bg-white rounded-3xl p-8 border border-[#7A8B6F]/10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(122,139,111,0.12)] transition-all duration-500 hover:-translate-y-2",
+      "team": "flex flex-col bg-transparent overflow-hidden rounded-3xl"
+    },
+    "forms": {
+      "input": "w-full bg-transparent border-b border-[#7A8B6F]/30 pb-3 text-[#2C2C2C] placeholder-[#7A8B6F]/50 focus:border-[#7A8B6F] focus:outline-none transition-colors rounded-none"
+    }
+  },
+  "motion": {
+    "hero": "Slow Ken Burns zoom (scale from 1.1 to 1 over 10s ease-out), staggered fade-in text (word by word, delay 0.1s)",
+    "scroll_reveal": "framer-motion initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-100px' }} transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}",
+    "parallax": "Use React Spring or Framer Motion useScroll for subtle background image shifts",
+    "team_card": "Card flip or expand on click to reveal bio",
+    "counters": "Count up animation using framer-motion or react-countup for Google and Yelp ratings",
+    "floating_cta": "Infinite slow pulse keyframes for the Book Now button on mobile",
+    "drawer": "Slide in from right (x: 100% -> x: 0) with staggered fade-in for list items",
+    "page_load": "Logo briefly centered with opacity 1, then fade out and slide up to reveal page"
+  },
+  "media": {
+    "images": {
+      "hero_background": {
+        "url": "https://customer-assets.emergentagent.com/job_85ef1133-d1a9-481e-8218-35b1a795e382/artifacts/motfuq8m_image.png",
+        "alt": "Marlinda's Mod Skincare Storefront Cedar Wood",
+        "placement": "Hero section background with dark/sage overlay"
+      },
+      "story_section": {
+        "url": "https://customer-assets.emergentagent.com/job_85ef1133-d1a9-481e-8218-35b1a795e382/artifacts/0gixb0lb_image.png",
+        "alt": "Permanent makeup artist working",
+        "placement": "Story Behind Our Beauty (Marlinda's Bio) side image"
+      },
+      "diamondglow_treatment": {
+        "url": "https://customer-assets.emergentagent.com/job_85ef1133-d1a9-481e-8218-35b1a795e382/artifacts/lr6p61sm_image.png",
+        "alt": "Microdermabrasion close-up glowing skin",
+        "placement": "Featured DiamondGlow treatment section"
+      },
+      "spa_ambiance": {
+        "url": "https://images.pexels.com/photos/433626/pexels-photo-433626.jpeg",
+        "alt": "Elegant indoor spa room with natural oil bottles",
+        "placement": "Background visual or inter-section parallax image"
+      },
+      "facial_ambiance": {
+        "url": "https://images.pexels.com/photos/37229306/pexels-photo-37229306.jpeg",
+        "alt": "Woman enjoying a relaxing facial treatment",
+        "placement": "Services section visual"
+      }
+    },
+    "treatment_overlay": "Soft grain/noise overlay for warmth and organic botanical shadows where applicable."
+  },
+  "content": {
+    "team": [
+      {"name": "Marlinda", "role": "Founder"},
+      {"name": "Helena", "role": "Expert Esthetician"},
+      {"name": "Maddie", "role": "Expert Esthetician"},
+      {"name": "Tina", "role": "Expert Esthetician"},
+      {"name": "Nanette", "role": "Expert Esthetician"},
+      {"name": "Summer", "role": "Expert Esthetician"}
+    ],
+    "team_card_instructions": "Use initial-based circular avatars (sage green letter on cream background) centered in the top area. The bottom area must be a sage green block containing the serif name and role.",
+    "links": {
+      "booker_service": "https://go.booker.com/location/MARLINDASModSkincare/service-menu",
+      "booker_gift_cards": "https://go.booker.com/location/MARLINDASModSkincare/buy/gift-certificate",
+      "email": "info@marlindas.com"
+    }
+  },
+  "accessibility": {
+    "contrast": "Ensure all text on sage and cream backgrounds meets WCAG AA standards. The sage text on cream background is high contrast.",
+    "focus": "All interactive elements must have focus:ring-2 focus:ring-[#7A8B6F].",
+    "motion": "Respect prefers-reduced-motion for all heavy animations.",
+    "testing": "All interactive elements MUST include a data-testid attribute in kebab-case."
+  },
+  "instructions_to_main_agent": [
+    "Build a single-page marketing site using pure HTML/Tailwind for structural layout and Shadcn for complex interactives (like FAQ accordion).",
+    "Use 'Cormorant Garamond' for headings, 'Manrope' for body, and 'Great Vibes' specifically for the word 'Marlinda\\'s'. Include Google Fonts links in HTML head.",
+    "Implement the mobile slide-in drawer using framer-motion for smooth staggered list item reveals. Ensure floating 'Book Now' button is pulsing and fixed to bottom on mobile, bottom-right on desktop.",
+    "Team Section: Strict adherence to the reference design - vertical cards with initial-avatar on top (cream bg) and a sage green block at bottom containing name and role.",
+    "Implement the complex animations: Ken burns hero zoom, staggered word reveal, animated underlines, counter animation for 5.0 Google/4.7 Yelp ratings, and page load overlay.",
+    "Use lucide-react for icons (Star, Menu, X, Facebook, Instagram, etc.)."
+  ]
+}
