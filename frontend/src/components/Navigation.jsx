@@ -47,7 +47,9 @@ export default function Navigation() {
                 <nav className="max-w-7xl mx-auto px-6 md:px-10 flex items-center justify-between">
                     <a
                         href="#home"
-                        className="font-cursive text-sage text-4xl sm:text-5xl leading-none -mt-2"
+                        className={`font-cursive text-4xl sm:text-5xl leading-none -mt-2 transition-colors ${
+                            scrolled ? "text-sage" : "text-cream drop-shadow-md"
+                        }`}
                         data-testid="nav-logo"
                     >
                         Marlinda's
@@ -60,7 +62,11 @@ export default function Navigation() {
                                     href={item.href}
                                     target={item.external ? "_blank" : undefined}
                                     rel={item.external ? "noopener noreferrer" : undefined}
-                                    className="nav-link text-ink/80 hover:text-sage text-[15px] font-medium tracking-wide"
+                                    className={`nav-link text-[15px] font-medium tracking-wide transition-colors ${
+                                        scrolled
+                                            ? "text-ink/80 hover:text-sage"
+                                            : "text-cream/95 hover:text-cream drop-shadow"
+                                    }`}
                                     data-testid={`nav-link-${item.label.toLowerCase().replace(/\s+/g, "-")}`}
                                 >
                                     {item.label}
@@ -83,7 +89,9 @@ export default function Navigation() {
 
                     <button
                         onClick={() => setOpen(true)}
-                        className="lg:hidden text-sage hover:text-sage-600 transition-colors p-2"
+                        className={`lg:hidden transition-colors p-2 ${
+                            scrolled ? "text-sage hover:text-sage-600" : "text-cream hover:text-rose-light"
+                        }`}
                         aria-label="Open menu"
                         data-testid="nav-mobile-toggle"
                     >

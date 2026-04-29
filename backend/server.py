@@ -32,6 +32,13 @@ if RESEND_API_KEY:
 app = FastAPI(title="Marlinda's Mod Skincare API")
 api_router = APIRouter(prefix="/api")
 
+# Logging
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+)
+logger = logging.getLogger(__name__)
+
 
 # ---------- Models ----------
 class ContactSubmission(BaseModel):
@@ -130,12 +137,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-)
-logger = logging.getLogger(__name__)
 
 
 @app.on_event("shutdown")

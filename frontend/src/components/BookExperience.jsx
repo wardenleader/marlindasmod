@@ -26,7 +26,7 @@ export default function BookExperience() {
                     </h2>
                 </Reveal>
                 <Reveal delay={0.2}>
-                    <p className="mt-8 text-ink/75 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed font-light">
+                    <p className="mt-8 text-ink/85 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed font-light">
                         Browse our full menu of services and book instantly online.
                         Every treatment is custom-tailored to your skin's unique story.
                     </p>
