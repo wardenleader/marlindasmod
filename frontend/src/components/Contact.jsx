@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { motion, AnimatePresence } from "framer-motion";
-import { MapPin, Phone, Mail, Clock, ArrowRight, Check, Loader2 } from "lucide-react";
+import { MapPin, Phone, Mail, ArrowRight, Check, Loader2 } from "lucide-react";
 import {
     ADDRESS,
     PHONE,
@@ -16,6 +16,42 @@ import { Reveal } from "./Reveal";
 const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 
 const initial = { name: "", email: "", phone: "", message: "" };
+
+// Animated clock face — hands rotate continuously
+function AnimatedClock() {
+    return (
+        <div
+            className="relative w-7 h-7 rounded-full border-[1.5px] border-ink/80 flex items-center justify-center bg-transparent"
+            aria-hidden="true"
+            data-testid="animated-clock"
+        >
+            {/* Center pin */}
+            <span className="absolute w-1 h-1 rounded-full bg-ink/80 z-10" />
+            {/* Hour markers */}
+            {[0, 90, 180, 270].map((deg) => (
+                <span
+                    key={deg}
+                    className="absolute top-0.5 left-1/2 w-[1px] h-[3px] bg-ink/50 origin-[50%_12px]"
+                    style={{ transform: `translateX(-50%) rotate(${deg}deg)` }}
+                />
+            ))}
+            {/* Minute hand */}
+            <motion.span
+                className="absolute top-1/2 left-1/2 h-[8px] w-[1.5px] bg-ink/85 rounded-full origin-bottom"
+                style={{ translateX: "-50%", translateY: "-100%" }}
+                animate={{ rotate: 360 }}
+                transition={{ duration: 6, repeat: Infinity, ease: "linear" }}
+            />
+            {/* Hour hand */}
+            <motion.span
+                className="absolute top-1/2 left-1/2 h-[5px] w-[1.5px] bg-ink rounded-full origin-bottom"
+                style={{ translateX: "-50%", translateY: "-100%" }}
+                animate={{ rotate: 360 }}
+                transition={{ duration: 72, repeat: Infinity, ease: "linear" }}
+            />
+        </div>
+    );
+}
 
 export default function Contact() {
     const [form, setForm] = useState(initial);
@@ -129,18 +165,18 @@ export default function Contact() {
                         </Reveal>
 
                         <Reveal delay={0.15}>
-                            <div className="bg-sage text-cream rounded-3xl p-8 md:p-10">
+                            <div className="bg-[#F0D878] text-ink rounded-3xl p-8 md:p-10 shadow-[0_8px_30px_rgba(240,216,120,0.35)]">
                                 <div className="flex items-center gap-3 mb-5">
-                                    <Clock size={20} strokeWidth={1.5} />
-                                    <h3 className="font-serif text-cream text-2xl font-light">
+                                    <AnimatedClock />
+                                    <h3 className="font-serif text-ink text-2xl font-light">
                                         Hours
                                     </h3>
                                 </div>
-                                <ul className="divide-y divide-cream/15">
+                                <ul className="divide-y divide-ink/15">
                                     {HOURS.map((h) => (
                                         <li
                                             key={h.day}
-                                            className="flex items-center justify-between py-3 text-cream/90"
+                                            className="flex items-center justify-between py-3 text-ink/85"
                                             data-testid={`hours-${h.day.toLowerCase()}`}
                                         >
                                             <span className="font-serif text-lg">{h.day}</span>

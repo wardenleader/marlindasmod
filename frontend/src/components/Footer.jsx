@@ -106,7 +106,7 @@ export default function Footer() {
 
                 <div className="mt-16 pt-10 border-t border-cream/15">
                     <p className="text-cream/60 text-xs tracking-[0.3em] uppercase mb-5">
-                        Studio Policies
+                        Spa Policies
                     </p>
                     <ul className="grid sm:grid-cols-2 gap-x-10 gap-y-3 text-cream/80 text-sm leading-relaxed font-light max-w-5xl">
                         {POLICIES.map((p, i) => (
