@@ -45,16 +45,16 @@ export default function Navigation() {
                 data-testid="site-nav"
             >
                 <nav className="max-w-7xl mx-auto px-6 md:px-10 flex items-center justify-between gap-4">
-                    {/* Top-left: cursive tagline */}
+                    {/* Top-left: Marlinda's cursive logo */}
                     <a
                         href="#home"
-                        className={`font-cursive leading-none -mt-1 transition-colors shrink min-w-0 truncate ${
+                        className={`font-cursive leading-none -mt-1 transition-colors shrink-0 ${
                             scrolled ? "text-ink" : "text-cream drop-shadow-md"
                         }`}
-                        style={{ fontSize: "clamp(1.25rem, 2.2vw, 1.875rem)" }}
+                        style={{ fontSize: "clamp(2rem, 3.2vw, 2.75rem)" }}
                         data-testid="nav-logo"
                     >
-                        Crafting Beauty with Passion
+                        Marlinda's
                     </a>
 
                     <ul className="hidden lg:flex items-center gap-8 shrink-0">

@@ -20,8 +20,7 @@ export const services = [
             "Marlinda has perfected permanent makeup artistry over two decades — enhancing natural beauty with soft, sophisticated, expertly placed pigment.",
         images: [
             "https://customer-assets.emergentagent.com/job_85ef1133-d1a9-481e-8218-35b1a795e382/artifacts/0gixb0lb_image.png",
-            "https://images.pexels.com/photos/3997381/pexels-photo-3997381.jpeg?auto=compress&cs=tinysrgb&w=1400",
-            "https://images.pexels.com/photos/4154165/pexels-photo-4154165.jpeg?auto=compress&cs=tinysrgb&w=1400",
+            "https://customer-assets.emergentagent.com/job_luxury-skincare-spa-1/artifacts/yzftmu2l_image.png",
         ],
     },
     {
@@ -38,14 +37,13 @@ export const services = [
     },
     {
         id: "lash-lift",
-        name: "Lash Lift",
-        tagline: "Lifted, fuller lashes — up to 8 weeks",
+        name: "Lash Lift & Brow Lamination",
+        tagline: "Lifted lashes & sleek, aligned brows",
         description:
-            "A semi-permanent lash curling treatment that creates a fuller, lifted look. Results last up to 8 weeks.",
+            "A semi-permanent lash curling treatment for a fuller, lifted look (results last up to 8 weeks), paired with brow lamination to straighten and align brow hairs for a polished, brushed-up finish that lasts 4 to 6 weeks.",
         images: [
             "https://customer-assets.emergentagent.com/job_luxury-skincare-spa-1/artifacts/2u6226rq_image.png",
-            "https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=1400",
-            "https://images.pexels.com/photos/4154165/pexels-photo-4154165.jpeg?auto=compress&cs=tinysrgb&w=1400",
+            "https://customer-assets.emergentagent.com/job_luxury-skincare-spa-1/artifacts/62ylabs9_image.png",
         ],
     },
     {
