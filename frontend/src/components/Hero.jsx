@@ -72,37 +72,26 @@ export default function Hero() {
                 transition={{ duration: 14, repeat: Infinity, ease: "easeInOut" }}
             />
 
-            <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-10 min-h-[100svh] flex flex-col justify-center pt-28 pb-24">
-                <motion.p
-                    initial={{ opacity: 0, y: 20, letterSpacing: "0.2em" }}
-                    animate={{ opacity: 1, y: 0, letterSpacing: "0.5em" }}
-                    transition={{ duration: 1.2, delay: 1.9, ease: [0.22, 1, 0.36, 1] }}
-                    className="text-champagne text-xs sm:text-sm uppercase mb-7 drop-shadow-lg font-semibold"
-                    data-testid="hero-eyebrow"
-                >
-                    Burlingame · Est. 1996
-                </motion.p>
-
+            <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-10 min-h-[100svh] flex flex-col justify-end pt-28 pb-32">
                 <motion.h1
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1.0, delay: 2.0, ease: [0.22, 1, 0.36, 1] }}
-                    className="font-serif text-cream font-medium tracking-tight drop-shadow-2xl"
+                    transition={{ duration: 1.0, delay: 1.9, ease: [0.22, 1, 0.36, 1] }}
+                    className="font-serif text-cream font-medium tracking-tight drop-shadow-2xl max-w-2xl"
                     style={{
-                        fontSize: "clamp(2.75rem, 6.5vw, 5.5rem)",
-                        lineHeight: 1.02,
+                        fontSize: "clamp(1.75rem, 3.2vw, 3rem)",
+                        lineHeight: 1.15,
                     }}
                     data-testid="hero-headline"
                 >
-                    A sanctuary where <br className="hidden sm:block" />
-                    <em className="not-italic text-rose-light">science</em> meets the <em className="not-italic text-rose-light">soul.</em>
+                    A sanctuary where <em className="not-italic text-rose-light">science</em> meets the <em className="not-italic text-rose-light">soul.</em>
                 </motion.h1>
 
                 <motion.p
                     initial={{ opacity: 0, y: 14 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.9, delay: 2.6 }}
-                    className="mt-7 max-w-2xl text-cream/90 text-lg sm:text-xl md:text-2xl font-serif font-light italic leading-snug drop-shadow"
+                    transition={{ duration: 0.9, delay: 2.3 }}
+                    className="mt-5 max-w-xl text-cream/90 text-base sm:text-lg font-serif font-light italic leading-snug drop-shadow"
                     data-testid="hero-subheading"
                 >
                     Three generations of beauty, thoughtfully crafted in Burlingame since 1996.
@@ -111,8 +100,8 @@ export default function Hero() {
                 <motion.div
                     initial={{ opacity: 0, y: 16 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.9, delay: 2.9 }}
-                    className="mt-10 flex flex-wrap gap-4"
+                    transition={{ duration: 0.9, delay: 2.6 }}
+                    className="mt-8 flex flex-wrap gap-4"
                 >
                     <a
                         href={BOOKER_URL}
