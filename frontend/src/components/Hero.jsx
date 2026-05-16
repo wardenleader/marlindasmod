@@ -15,7 +15,7 @@ export default function Hero() {
                     <img
                         src="https://customer-assets.emergentagent.com/job_luxury-skincare-spa-1/artifacts/0c79pxh9_image.png"
                         alt="Marlinda's Mod Skincare storefront at 1199 Howard Ave, Burlingame"
-                        className="absolute inset-0 w-full h-full object-cover object-center"
+                        className="absolute inset-0 w-full h-full object-contain sm:object-cover object-top sm:object-center bg-ink"
                         loading="eager"
                     />
                 </div>
@@ -77,30 +77,21 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1.0, delay: 1.9, ease: [0.22, 1, 0.36, 1] }}
-                    className="font-serif text-cream font-medium tracking-tight drop-shadow-2xl max-w-2xl"
+                    className="font-serif text-cream font-medium tracking-tight drop-shadow-2xl max-w-3xl"
                     style={{
-                        fontSize: "clamp(1.75rem, 3.2vw, 3rem)",
-                        lineHeight: 1.15,
+                        fontSize: "clamp(1.5rem, 3vw, 2.75rem)",
+                        lineHeight: 1.2,
                     }}
                     data-testid="hero-headline"
                 >
-                    A sanctuary where <em className="not-italic text-rose-light">science</em> meets the <em className="not-italic text-rose-light">soul.</em>
+                    Three generations of <em className="not-italic text-rose-light">beauty</em>,
+                    thoughtfully crafted in Burlingame since 1996.
                 </motion.h1>
-
-                <motion.p
-                    initial={{ opacity: 0, y: 14 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.9, delay: 2.3 }}
-                    className="mt-5 max-w-xl text-cream/90 text-base sm:text-lg font-serif font-light italic leading-snug drop-shadow"
-                    data-testid="hero-subheading"
-                >
-                    Three generations of beauty, thoughtfully crafted in Burlingame since 1996.
-                </motion.p>
 
                 <motion.div
                     initial={{ opacity: 0, y: 16 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.9, delay: 2.6 }}
+                    transition={{ duration: 0.9, delay: 2.3 }}
                     className="mt-8 flex flex-wrap gap-4"
                 >
                     <a

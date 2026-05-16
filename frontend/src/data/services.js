@@ -20,7 +20,7 @@ export const services = [
             "Marlinda has perfected permanent makeup artistry over two decades — enhancing natural beauty with soft, sophisticated, expertly placed pigment.",
         images: [
             "https://customer-assets.emergentagent.com/job_85ef1133-d1a9-481e-8218-35b1a795e382/artifacts/0gixb0lb_image.png",
-            "https://customer-assets.emergentagent.com/job_luxury-skincare-spa-1/artifacts/yzftmu2l_image.png",
+            "https://customer-assets.emergentagent.com/job_luxury-skincare-spa-1/artifacts/9lpc6mxm_image.png",
         ],
     },
     {
@@ -32,7 +32,6 @@ export const services = [
         images: [
             "https://customer-assets.emergentagent.com/job_luxury-skincare-spa-1/artifacts/8a0hk2s6_image.png",
             "https://customer-assets.emergentagent.com/job_luxury-skincare-spa-1/artifacts/bfix88ed_image.png",
-            "https://customer-assets.emergentagent.com/job_luxury-skincare-spa-1/artifacts/j7rlnj7k_image.png",
         ],
     },
     {
@@ -42,9 +41,7 @@ export const services = [
         description:
             "A semi-permanent lash curling treatment for a fuller, lifted look (results last up to 8 weeks), paired with brow lamination to straighten and align brow hairs for a polished, brushed-up finish that lasts 4 to 6 weeks.",
         images: [
-            "https://customer-assets.emergentagent.com/job_luxury-skincare-spa-1/artifacts/2u6226rq_image.png",
             "https://customer-assets.emergentagent.com/job_luxury-skincare-spa-1/artifacts/62ylabs9_image.png",
-            "https://customer-assets.emergentagent.com/job_luxury-skincare-spa-1/artifacts/9lpc6mxm_image.png",
         ],
     },
     {
