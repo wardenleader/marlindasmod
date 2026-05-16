@@ -46,7 +46,7 @@ export default function FloatingCTA() {
                         animate={{ scale: 1, opacity: 1 }}
                         exit={{ scale: 0, opacity: 0 }}
                         transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-                        className="hidden sm:flex fixed bottom-6 right-6 z-[70] animate-soft-pulse items-center gap-2 bg-rose hover:bg-rose-dark text-ink rounded-full pl-5 pr-6 py-3.5 text-xs font-medium tracking-[0.2em] uppercase shadow-2xl transition-colors hover:scale-105"
+                        className="hidden sm:flex fixed bottom-6 right-6 z-[70] animate-soft-pulse items-center gap-2 bg-rose hover:bg-rose-dark text-white rounded-full pl-5 pr-6 py-3.5 text-xs font-medium tracking-[0.2em] uppercase shadow-2xl transition-colors hover:scale-105"
                         data-testid="floating-cta-desktop"
                     >
                         <CalendarHeart size={18} strokeWidth={1.5} />

@@ -6,7 +6,6 @@ import BookExperience from "@/components/BookExperience";
 import About from "@/components/About";
 import Story from "@/components/Story";
 import Services from "@/components/Services";
-import DiamondGlow from "@/components/DiamondGlow";
 import Team from "@/components/Team";
 import Reviews from "@/components/Reviews";
 import GiftCards from "@/components/GiftCards";
@@ -25,7 +24,6 @@ export default function App() {
                 <About />
                 <Story />
                 <Services />
-                <DiamondGlow />
                 <Team />
                 <Reviews />
                 <GiftCards />

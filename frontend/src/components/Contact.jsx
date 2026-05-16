@@ -95,13 +95,13 @@ export default function Contact() {
             <div className="relative max-w-7xl mx-auto px-6 md:px-10">
                 <div className="text-center mb-14">
                     <Reveal>
-                        <p className="text-sage tracking-[0.4em] uppercase text-xs mb-5">
+                        <p className="text-[#A07E3F] tracking-[0.35em] uppercase text-sm font-semibold mb-5">
                             Visit Us
                         </p>
                     </Reveal>
                     <Reveal delay={0.1}>
-                        <h2 className="font-serif text-sage text-5xl sm:text-6xl md:text-7xl font-light tracking-tight leading-[1.05]">
-                            Come <em className="text-rose-dark">Say Hello</em>
+                        <h2 className="font-serif text-ink text-5xl sm:text-6xl md:text-7xl font-medium tracking-tight leading-[1.05]">
+                            Come <em className="text-rose-dark not-italic font-medium">Say Hello</em>
                         </h2>
                     </Reveal>
                 </div>
@@ -110,38 +110,38 @@ export default function Contact() {
                     {/* Left: Contact Info + Map */}
                     <div className="lg:col-span-6 space-y-8">
                         <Reveal>
-                            <div className="bg-cream-50 rounded-3xl p-8 md:p-10 border border-sage/10">
-                                <h3 className="font-serif text-sage text-3xl font-light mb-6">
+                            <div className="bg-cream-50 rounded-3xl p-8 md:p-10 border border-champagne/30">
+                                <h3 className="font-serif text-ink text-3xl font-medium mb-6">
                                     Contact
                                 </h3>
                                 <ul className="space-y-5 text-ink/85">
                                     <li className="flex items-start gap-4">
-                                        <MapPin size={20} strokeWidth={1.5} className="text-sage mt-1 shrink-0" />
+                                        <MapPin size={20} strokeWidth={1.5} className="text-champagne mt-1 shrink-0" />
                                         <a
                                             href={MAP_URL}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="hover:text-sage transition-colors leading-relaxed"
+                                            className="hover:text-rose-dark transition-colors leading-relaxed"
                                             data-testid="contact-address"
                                         >
                                             {ADDRESS}
                                         </a>
                                     </li>
                                     <li className="flex items-center gap-4">
-                                        <Phone size={20} strokeWidth={1.5} className="text-sage shrink-0" />
+                                        <Phone size={20} strokeWidth={1.5} className="text-champagne shrink-0" />
                                         <a
                                             href={PHONE_TEL}
-                                            className="hover:text-sage transition-colors text-lg"
+                                            className="hover:text-rose-dark transition-colors text-lg"
                                             data-testid="contact-phone"
                                         >
                                             {PHONE}
                                         </a>
                                     </li>
                                     <li className="flex items-center gap-4">
-                                        <Mail size={20} strokeWidth={1.5} className="text-sage shrink-0" />
+                                        <Mail size={20} strokeWidth={1.5} className="text-champagne shrink-0" />
                                         <a
                                             href={`mailto:${EMAIL}`}
-                                            className="hover:text-sage transition-colors"
+                                            className="hover:text-rose-dark transition-colors"
                                             data-testid="contact-email"
                                         >
                                             {EMAIL}
@@ -152,7 +152,7 @@ export default function Contact() {
                         </Reveal>
 
                         <Reveal delay={0.1}>
-                            <div className="rounded-3xl overflow-hidden border border-sage/10 shadow-lg aspect-[16/10]">
+                            <div className="rounded-3xl overflow-hidden border border-champagne/30 shadow-lg aspect-[16/10]">
                                 <iframe
                                     title="Marlinda's Mod Skincare location"
                                     src={MAP_EMBED}
@@ -165,10 +165,10 @@ export default function Contact() {
                         </Reveal>
 
                         <Reveal delay={0.15}>
-                            <div className="bg-[#F0D878] text-ink rounded-3xl p-8 md:p-10 shadow-[0_8px_30px_rgba(240,216,120,0.35)]">
+                            <div className="bg-[#D6C3A3] text-ink rounded-3xl p-8 md:p-10 shadow-[0_8px_30px_rgba(214,195,163,0.4)]">
                                 <div className="flex items-center gap-3 mb-5">
                                     <AnimatedClock />
-                                    <h3 className="font-serif text-ink text-2xl font-light">
+                                    <h3 className="font-serif text-ink text-2xl font-medium">
                                         Hours
                                     </h3>
                                 </div>
@@ -195,10 +195,10 @@ export default function Contact() {
                         <Reveal>
                             <form
                                 onSubmit={submit}
-                                className="bg-cream-50 rounded-3xl p-8 md:p-12 border border-sage/10 shadow-[0_8px_30px_rgba(184,137,61,0.06)]"
+                                className="bg-cream-50 rounded-3xl p-8 md:p-12 border border-champagne/30 shadow-[0_8px_30px_rgba(184,137,61,0.06)]"
                                 data-testid="contact-form"
                             >
-                                <h3 className="font-serif text-sage text-3xl font-light mb-2">
+                                <h3 className="font-serif text-ink text-3xl font-medium mb-2">
                                     Send a Message
                                 </h3>
                                 <p className="text-ink/60 text-sm mb-8">
@@ -241,7 +241,7 @@ export default function Contact() {
                                 <button
                                     type="submit"
                                     disabled={status.state === "loading"}
-                                    className="btn-ripple inline-flex items-center gap-2 mt-9 bg-sage hover:bg-sage-600 disabled:opacity-60 disabled:cursor-not-allowed text-cream rounded-full px-8 py-4 text-sm font-medium tracking-[0.15em] uppercase transition-all duration-300 hover:scale-[1.03] shadow-lg"
+                                    className="btn-ripple inline-flex items-center gap-2 mt-9 bg-rose hover:bg-rose-dark disabled:opacity-60 disabled:cursor-not-allowed text-white rounded-full px-8 py-4 text-sm font-medium tracking-[0.15em] uppercase transition-all duration-300 hover:scale-[1.03] shadow-lg"
                                     data-testid="contact-submit"
                                 >
                                     {status.state === "loading" ? (
@@ -261,7 +261,7 @@ export default function Contact() {
                                             initial={{ opacity: 0, y: 10 }}
                                             animate={{ opacity: 1, y: 0 }}
                                             exit={{ opacity: 0 }}
-                                            className="mt-6 flex items-center gap-2 text-sage"
+                                            className="mt-6 flex items-center gap-2 text-rose-dark"
                                             data-testid="contact-success"
                                         >
                                             <Check size={18} /> {status.message}
@@ -292,7 +292,7 @@ function Field({ label, value, onChange, type = "text", textarea, required, test
     const Cmp = textarea ? "textarea" : "input";
     return (
         <label className="block">
-            <span className="block text-sage tracking-[0.2em] uppercase text-[10px] mb-2">
+            <span className="block text-champagne tracking-[0.2em] uppercase text-[10px] mb-2 font-medium">
                 {label}
                 {required && <span className="text-rose-dark ml-1">•</span>}
             </span>
@@ -303,7 +303,7 @@ function Field({ label, value, onChange, type = "text", textarea, required, test
                 rows={textarea ? 4 : undefined}
                 required={required}
                 data-testid={testid}
-                className="w-full bg-transparent border-b border-sage/30 pb-3 pt-1 text-ink placeholder-sage/40 focus:border-sage focus:outline-none transition-colors text-base resize-none"
+                className="w-full bg-transparent border-b border-champagne/50 pb-3 pt-1 text-ink placeholder-champagne/50 focus:border-rose-dark focus:outline-none transition-colors text-base resize-none"
             />
         </label>
     );

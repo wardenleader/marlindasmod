@@ -7,36 +7,52 @@ module.exports = {
             fontFamily: {
                 serif: ["'Cormorant Garamond'", "Georgia", "serif"],
                 sans: ["'Manrope'", "ui-sans-serif", "system-ui", "sans-serif"],
-                cursive: ["'Great Vibes'", "cursive"],
+                cursive: ["'Allura'", "'Great Vibes'", "cursive"],
             },
             colors: {
+                // Champagne Gold — accents only (lines, icons, small highlights)
                 sage: {
-                    DEFAULT: "#B8893D",
-                    50: "#FBF5E6",
-                    100: "#F5E8C2",
-                    200: "#ECD58B",
-                    300: "#DEBC52",
-                    400: "#CDA440",
-                    500: "#B8893D",
-                    600: "#9A7032",
-                    700: "#785626",
-                    800: "#553D1A",
-                    900: "#33240F",
+                    DEFAULT: "#D6C3A3",
+                    50: "#FAF7F1",
+                    100: "#F2EBDB",
+                    200: "#E8DCC1",
+                    300: "#DECCA6",
+                    400: "#D6C3A3",
+                    500: "#C9B286",
+                    600: "#B19967",
+                    700: "#8C7A52",
+                    800: "#665A3D",
+                    900: "#403925",
                 },
+                // Warm Cream + Soft Taupe (main page background + alternates)
                 cream: {
-                    DEFAULT: "#F5F1EA",
-                    50: "#FBF9F5",
-                    100: "#F5F1EA",
-                    200: "#EAE4D6",
-                    300: "#DFD7C2",
+                    DEFAULT: "#F6F4F1",
+                    50: "#FBFAF8",
+                    100: "#F6F4F1",
+                    200: "#E7E1D8",
+                    300: "#DAD2C5",
                 },
+                taupe: {
+                    DEFAULT: "#E7E1D8",
+                    light: "#EFEAE2",
+                    dark: "#D8CFC0",
+                },
+                // Dusty Blush — primary buttons + small highlights
                 rose: {
-                    DEFAULT: "#D4A5A5",
-                    light: "#E5C2C2",
-                    dark: "#C28C8C",
+                    DEFAULT: "#D8B7B7",
+                    light: "#E8CECE",
+                    dark: "#C7A0A0",
                 },
-                champagne: "#C5A059",
-                ink: "#2C2C2C",
+                // Champagne Gold accent (alias for clarity)
+                champagne: "#D6C3A3",
+                // Soft Charcoal — body & headings
+                ink: "#3A3A3A",
+                charcoal: "#3A3A3A",
+                muted: {
+                    DEFAULT: "hsl(var(--muted))",
+                    foreground: "hsl(var(--muted-foreground))",
+                    gray: "#6B6B6B",
+                },
                 background: "hsl(var(--background))",
                 foreground: "hsl(var(--foreground))",
                 card: {
@@ -54,10 +70,6 @@ module.exports = {
                 secondary: {
                     DEFAULT: "hsl(var(--secondary))",
                     foreground: "hsl(var(--secondary-foreground))",
-                },
-                muted: {
-                    DEFAULT: "hsl(var(--muted))",
-                    foreground: "hsl(var(--muted-foreground))",
                 },
                 accent: {
                     DEFAULT: "hsl(var(--accent))",
@@ -91,18 +103,13 @@ module.exports = {
                 },
                 "soft-pulse": {
                     "0%, 100%": {
-                        boxShadow: "0 0 0 0 rgba(212, 165, 165, 0.55)",
+                        boxShadow: "0 0 0 0 rgba(216, 183, 183, 0.55)",
                     },
-                    "50%": { boxShadow: "0 0 0 18px rgba(212, 165, 165, 0)" },
+                    "50%": { boxShadow: "0 0 0 18px rgba(216, 183, 183, 0)" },
                 },
                 shimmer: {
                     "0%": { transform: "translateX(-100%)" },
                     "100%": { transform: "translateX(100%)" },
-                },
-                "scroll-down": {
-                    "0%": { transform: "translateY(-50%)", opacity: "0" },
-                    "30%": { opacity: "1" },
-                    "100%": { transform: "translateY(50%)", opacity: "0" },
                 },
                 float: {
                     "0%, 100%": { transform: "translateY(0)" },
@@ -115,7 +122,6 @@ module.exports = {
                 "ken-burns": "ken-burns 18s ease-out forwards",
                 "soft-pulse": "soft-pulse 2.6s ease-out infinite",
                 shimmer: "shimmer 2.5s ease-in-out infinite",
-                "scroll-down": "scroll-down 1.8s ease-in-out infinite",
                 float: "float 6s ease-in-out infinite",
             },
         },

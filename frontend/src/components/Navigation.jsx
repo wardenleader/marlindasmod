@@ -39,23 +39,25 @@ export default function Navigation() {
                 transition={{ duration: 0.7, delay: 1.6, ease: [0.22, 1, 0.36, 1] }}
                 className={`fixed top-0 inset-x-0 z-[80] transition-all duration-500 ${
                     scrolled
-                        ? "bg-cream/85 backdrop-blur-xl shadow-[0_2px_24px_rgba(184,137,61,0.08)] py-3"
+                        ? "bg-cream/85 backdrop-blur-xl shadow-[0_2px_24px_rgba(58,58,58,0.06)] py-3"
                         : "bg-transparent py-5"
                 }`}
                 data-testid="site-nav"
             >
-                <nav className="max-w-7xl mx-auto px-6 md:px-10 flex items-center justify-between">
+                <nav className="max-w-7xl mx-auto px-6 md:px-10 flex items-center justify-between gap-4">
+                    {/* Top-left: Marlinda's cursive logo */}
                     <a
                         href="#home"
-                        className={`font-cursive text-4xl sm:text-5xl leading-none -mt-2 transition-colors ${
-                            scrolled ? "text-sage" : "text-cream drop-shadow-md"
+                        className={`font-cursive leading-none -mt-1 transition-colors shrink-0 ${
+                            scrolled ? "text-ink" : "text-cream drop-shadow-md"
                         }`}
+                        style={{ fontSize: "clamp(2rem, 3.2vw, 2.75rem)" }}
                         data-testid="nav-logo"
                     >
                         Marlinda's
                     </a>
 
-                    <ul className="hidden lg:flex items-center gap-8">
+                    <ul className="hidden lg:flex items-center gap-8 shrink-0">
                         {NAV_ITEMS.map((item) => (
                             <li key={item.label}>
                                 <a
@@ -64,7 +66,7 @@ export default function Navigation() {
                                     rel={item.external ? "noopener noreferrer" : undefined}
                                     className={`nav-link text-[15px] font-medium tracking-wide transition-colors ${
                                         scrolled
-                                            ? "text-ink/80 hover:text-sage"
+                                            ? "text-ink/80 hover:text-ink"
                                             : "text-cream/95 hover:text-cream drop-shadow"
                                     }`}
                                     data-testid={`nav-link-${item.label.toLowerCase().replace(/\s+/g, "-")}`}
@@ -75,12 +77,12 @@ export default function Navigation() {
                         ))}
                     </ul>
 
-                    <div className="hidden lg:block">
+                    <div className="hidden lg:block shrink-0">
                         <a
                             href={BOOKER_URL}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="btn-ripple inline-flex items-center justify-center bg-sage text-cream rounded-full px-6 py-2.5 text-sm font-medium tracking-wide hover:bg-sage-600 transition-all duration-300 hover:scale-[1.03] shadow-md"
+                            className="btn-ripple inline-flex items-center justify-center bg-rose text-white rounded-full px-6 py-2.5 text-sm font-medium tracking-wide hover:bg-rose-dark transition-all duration-300 hover:scale-[1.03] shadow-md"
                             data-testid="nav-book-cta"
                         >
                             Book an Appointment
@@ -89,8 +91,8 @@ export default function Navigation() {
 
                     <button
                         onClick={() => setOpen(true)}
-                        className={`lg:hidden transition-colors p-2 ${
-                            scrolled ? "text-sage hover:text-sage-600" : "text-cream hover:text-rose-light"
+                        className={`lg:hidden transition-colors p-2 shrink-0 ${
+                            scrolled ? "text-ink hover:text-rose-dark" : "text-cream hover:text-rose-light"
                         }`}
                         aria-label="Open menu"
                         data-testid="nav-mobile-toggle"
@@ -119,7 +121,7 @@ export default function Navigation() {
                                 duration: 0.5,
                                 ease: [0.22, 1, 0.36, 1],
                             }}
-                            className="fixed top-0 right-0 bottom-0 z-[91] w-full sm:w-[420px] bg-sage text-cream p-8 flex flex-col lg:hidden overflow-y-auto"
+                            className="fixed top-0 right-0 bottom-0 z-[91] w-full sm:w-[420px] bg-ink text-cream p-8 flex flex-col lg:hidden overflow-y-auto"
                             data-testid="nav-drawer"
                         >
                             <div className="flex items-center justify-between mb-12">
@@ -128,7 +130,7 @@ export default function Navigation() {
                                 </span>
                                 <button
                                     onClick={() => setOpen(false)}
-                                    className="text-cream hover:text-rose transition-colors p-2"
+                                    className="text-cream hover:text-rose-light transition-colors p-2"
                                     aria-label="Close menu"
                                     data-testid="nav-drawer-close"
                                 >
@@ -164,7 +166,7 @@ export default function Navigation() {
                                                     : undefined
                                             }
                                             onClick={() => setOpen(false)}
-                                            className="block py-4 border-b border-cream/15 font-serif text-3xl sm:text-4xl text-cream hover:text-rose transition-colors"
+                                            className="block py-4 border-b border-cream/15 font-serif text-3xl sm:text-4xl text-cream hover:text-champagne transition-colors"
                                             data-testid={`drawer-link-${item.label.toLowerCase().replace(/\s+/g, "-")}`}
                                         >
                                             {item.label}

@@ -24,10 +24,10 @@ export default function PageLoader() {
                         transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
                         className="relative text-center"
                     >
-                        <div className="font-cursive text-sage text-7xl sm:text-8xl leading-none">
+                        <div className="font-cursive text-ink text-7xl sm:text-8xl leading-none">
                             Marlinda's
                         </div>
-                        <div className="mt-4 text-sage/70 tracking-[0.4em] text-xs uppercase">
+                        <div className="mt-5 text-champagne tracking-[0.5em] text-lg sm:text-xl uppercase font-semibold">
                             Mod Skincare
                         </div>
                     </motion.div>

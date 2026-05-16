@@ -1,3 +1,4 @@
+// Team in display order: Marlinda, Maddie, Tina, Nanette, Summer, Helena
 export const team = [
     {
         id: "marlinda",
@@ -5,17 +6,8 @@ export const team = [
         firstName: "Marlinda",
         role: "Founder & Esthetician",
         image: "https://customer-assets.emergentagent.com/job_luxury-skincare-spa-1/artifacts/osmfh5qg_image.png",
-        bio: "Marlinda founded Marlinda's Skin & Bodycare in 1996, establishing a legacy of excellence in skincare. Over the years, she has cultivated a loyal clientele who appreciate her professionalism, dedication, and warm, friendly approach. With over 20 years of experience as a permanent makeup artist, Marlinda is also highly skilled in enhancing natural beauty through precise and artistic techniques. As a perceptive and knowledgeable esthetician, she is passionate about helping her clients achieve and maintain a youthful, healthy appearance.",
+        bio: "Marlinda is the founder of Marlinda's Skin & Bodycare, established in 1996, where she has cultivated a distinguished legacy of excellence in skincare. Rooted in a three-generation tradition alongside her daughter, Mia and granddaughter, Maddie, her work is a reflection of enduring passion, artistry, and a deep commitment to care. Over the years, she has built a devoted clientele who are drawn not only to her expertise, but to her refined approach, attention to detail, and effortlessly warm presence. With more than two decades of experience in permanent makeup artistry, Marlinda is recognized for her precision, elevated technique, and ability to enhance natural beauty with soft, sophisticated results.",
         contact: null,
-    },
-    {
-        id: "helena",
-        name: "Helena",
-        firstName: "Helena",
-        role: "Nail Technician",
-        image: "https://customer-assets.emergentagent.com/job_luxury-skincare-spa-1/artifacts/crfbbsdj_image.png",
-        bio: "Helena is a seasoned and talented nail technician with over 35 years of experience. Renowned for her dedication to maintaining her clients' nail health, she combines expert care with invigorating conversation. Experience elevated professionalism.",
-        contact: { label: "Text or call", phone: "(650) 274-2127" },
     },
     {
         id: "maddie",
@@ -50,7 +42,16 @@ export const team = [
         firstName: "Summer",
         role: "Massage Therapist & Esthetician",
         image: "https://customer-assets.emergentagent.com/job_luxury-skincare-spa-1/artifacts/a48d057r_image.png",
-        bio: "Hi, I'm Summer — an experienced Massage Therapist and Esthetician with over five years of practice. I believe massage therapy is a powerful way to promote relaxation, reduce stress, and relieve pain. As an esthetician, I'm passionate about helping every client feel confident and beautiful in their own skin. My goal is to provide personalized treatments tailored to each client's unique needs.",
+        bio: "Hi, I'm Summer — an experienced Massage Therapist and Esthetician with over five years of practice. I believe massage therapy is a powerful way to promote relaxation, reduce stress, and relieve pain. As an esthetician, I'm passionate about helping every client feel confident and beautiful in their own skin.",
         contact: { label: "Call or text", phone: "(650) 483-6903" },
+    },
+    {
+        id: "helena",
+        name: "Helena",
+        firstName: "Helena",
+        role: "Nail Technician",
+        image: "https://customer-assets.emergentagent.com/job_luxury-skincare-spa-1/artifacts/crfbbsdj_image.png",
+        bio: "Helena is a seasoned and talented nail technician with over 35 years of experience. Renowned for her dedication to maintaining her clients' nail health, she combines expert care with invigorating conversation. Experience elevated professionalism.",
+        contact: { label: "Text or call", phone: "(650) 274-2127" },
     },
 ];
